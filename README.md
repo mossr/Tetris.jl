@@ -29,7 +29,7 @@ using Tetris
 
 
 # Why?
-Great question. I first wanted to create Tetris in Julia, then made it a goal to reduce it down to one functional line of Julia code. I'm not using semicolons to break up separate Julia lines. Instead, I'm using tricks to define one inner `__init__()` function that encodes the game state variables and subroutines as function arguments and then runs the game loop when the [`Tetris`](https://github.com/mossr/Tetris.jl/blob/master/src/Tetris.jl) module is loaded.
+Great question. I first wanted to create Tetris in Julia, then made it a goal to reduce it down to one functional line of Julia code. I'm not using semicolons to break up separate Julia lines. Instead, I'm using tricks to define one inner `__init__()` function that encodes the game state variables and subroutines as function arguments and then runs the game loop when the [`Tetris`](https://raw.githubusercontent.com/mossr/Tetris.jl/master/src/Tetris.jl) module is loaded.
 
 Keypresses are limited to Windows as I do not want to rely on external libraries (it can run on Unix but lacks keyboard input support, PRs welcome). Games are limited to 1 hour (72,000 iterations with a game clock of 0.05 seconds), as while loops would break my "don't use semicolons to separate lines" rule (aside from Matrix row definitions). It runs directly on the command line or you can copy and paste the one line into the Julia REPL and play.
 
