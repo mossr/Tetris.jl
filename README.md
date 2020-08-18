@@ -7,7 +7,7 @@ module Tetris (__init__(██="██", ■■="[]", S=" "^2, R="\e[31m$██\
 ```
 
 <p align="center">
-  <img src="https://github.com/mossr/Tetris.jl/blob/master/tetris.png">
+  <img src="https://github.com/mossr/Tetris.jl/blob/master/img/tetris.png">
 </p>
 
 View the raw one-liner at [`Tetris.jl`](https://raw.githubusercontent.com/mossr/Tetris.jl/master/src/Tetris.jl) and an exanded/indented version at [`TetrisExpanded.jl`](https://github.com/mossr/Tetris.jl/blob/master/src/TetrisExpanded.jl). For an un-obfuscated version, see my [JuliaGaming implementation](https://github.com/JuliaGaming/Tetris/tree/master/Tetris-mossr).
@@ -23,13 +23,21 @@ using Tetris
 Running this will automatically start the game.
 
 
-# Controls (wasd + qe)
+## Controls (wasd + qe)
 * `a` and `d` for left and right movement
 * `s` to move down
 * `w` to snap down
 * `q` and `e` for left and right rotations
 * `esc` to quit
 
+## One-line Timelapse
+In going from the full implementation (pushed to [JuliaGaming](https://github.com/JuliaGaming/Tetris/tree/master/Tetris-mossr)) down to one line, I recorded my screen for others to witness the abomination. (Click to zoom-in)
+
+<p align="center">
+  <img src="https://github.com/mossr/Tetris.jl/blob/master/img/timelapse.gif">
+</p>
+
+Sidenote, this was actually recorded *after* I finished. I used the Sublime Text `ctrl-z` buffer all the way back, then hit record and used `crtl-y` to go forward.
 
 # Why?
 Great question. I first wanted to create Tetris in Julia, then made it a goal to reduce it down to one functional line of Julia code. I'm not using semicolons to break up separate Julia lines. Instead, I'm using tricks to define one inner `__init__()` function that encodes the game state variables and subroutines as function arguments and then runs the game loop when the [`Tetris`](https://raw.githubusercontent.com/mossr/Tetris.jl/master/src/Tetris.jl) module is loaded.
