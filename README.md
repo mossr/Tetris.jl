@@ -10,7 +10,7 @@ module Tetris (__init__(██="██", ■■="[]", S=" "^2, R="\e[31m$██\
   <img src="https://github.com/mossr/Tetris.jl/blob/master/tetris.png">
 </p>
 
-View the raw one-liner at [`Tetris.jl`](https://raw.githubusercontent.com/mossr/Tetris.jl/master/src/Tetris.jl) and an exanded/indented version at [`TetrisExpanded.jl`](https://github.com/mossr/Tetris.jl/blob/master/src/TetrisExpanded.jl).
+View the raw one-liner at [`Tetris.jl`](https://raw.githubusercontent.com/mossr/Tetris.jl/master/src/Tetris.jl) and an exanded/indented version at [`TetrisExpanded.jl`](https://github.com/mossr/Tetris.jl/blob/master/src/TetrisExpanded.jl). For an un-obfuscated version, see my [JuliaGaming implementation](https://github.com/JuliaGaming/Tetris/tree/master/Tetris-mossr).
 
 #### Installation
 ```julia
