@@ -1,5 +1,7 @@
 # Tetris.jl
 
+[![Build Status](https://travis-ci.org/mossr/Tetris.jl.svg?branch=master)](https://travis-ci.org/mossr/Tetris.jl)
+
 Tetris in the Julia REPL..._in one line of code!_
 
 ```julia
@@ -12,15 +14,17 @@ module Tetris (__init__(██="██", ■■="[]", S=" "^2, R="\e[31m$██\
 
 View the raw one-liner at [`Tetris.jl`](https://raw.githubusercontent.com/mossr/Tetris.jl/master/src/Tetris.jl) and an exanded/indented version at [`TetrisExpanded.jl`](https://github.com/mossr/Tetris.jl/blob/master/src/TetrisExpanded.jl). For an un-obfuscated version, see my [JuliaGaming implementation](https://github.com/JuliaGaming/Tetris/tree/master/Tetris-mossr).
 
-#### Installation
+### Installation
 ```julia
-] add https://github.com/mossr/Tetris.jl
+] add Tetris
 ```
-#### Playing
+Works across operating systems—even on Android using [Termux](https://github.com/termux/termux-packages/issues/58#issuecomment-529036798)!
+
+### Playing
 ```julia
 using Tetris
 ```
-Running this will automatically start the game.
+Running this will automatically start the game and exit the REPL at gameover.
 
 
 ## Controls (wasd + qe)

@@ -1,4 +1,4 @@
 name = "Tetris"
 uuid = "d02b474b-c6a0-45b1-beee-9a2049fa00e6"
 authors = ["Robert Moss <mossr@cs.stanford.edu>"]
-version = "0.1.0"
+version = "0.1.1"
