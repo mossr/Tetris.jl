@@ -9,7 +9,7 @@ Tetris in the Julia REPL..._in one line of code!_
 </p>
 
 <p align="center">
-  <img src="./img/tetris-one-liner.svg">
+  <img src="./img/tetris-one-liner.png">
 </p>
 
 ```julia
